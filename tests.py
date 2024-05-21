@@ -1,5 +1,5 @@
 import unittest
-from main import to_upper
+from main import to_upper, calculate_age
 
 
 class MyTestCase(unittest.TestCase):
@@ -7,6 +7,10 @@ class MyTestCase(unittest.TestCase):
         name = "Shubham"
         upper_name = to_upper(name)
         self.assertEqual(upper_name, "SHUBHAM")
+    
+    def test_calculate_age(self):
+        self.assertAlmostEqual(calculate_age, True)
+
 
 
 if __name__ == '__main__':
