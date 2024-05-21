@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(upper_name, "SHUBHAM")
     
     def test_calculate_age(self):
-        self.assertAlmostEqual(calculate_age, True)
+        self.assertEqual(calculate_age, True)
 
 
 
